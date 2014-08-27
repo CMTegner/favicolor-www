@@ -110,6 +110,7 @@ h2 {
     -webkit-align-items: center;
     font-size: 15vh;
     padding-bottom: .5rem; /* compensate for &times; */
+    cursor: pointer;
 }
 
 .browser .hint {
