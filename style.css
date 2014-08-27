@@ -45,21 +45,21 @@ h2 {
 .location-bar .buttons {
     float: left;
     text-align: center;
-    line-height: 3em;
-    width: 4.5em;
+    line-height: 3rem;
+    width: 4.5rem;
 }
 
 .location-bar .circle {
-    height: .75em;
-    border-radius: .75em;
+    height: .75rem;
+    border-radius: .75rem;
     border: 2px solid #d3d3d3;
     display: inline-block;
-    width: .75em;
+    width: .75rem;
 }
 
 .location-bar .location {
-    margin: 0 1em 0 4.5em;
-    line-height: 3em;
+    margin: 0 1em 0 4.5rem;
+    line-height: 3rem;
 }
 
 .location-bar .address {
@@ -67,9 +67,9 @@ h2 {
     border: 2px solid;
     color: #d3d3d3;
     font-family: Arial, sans-serif;
-    padding: 0 .5em;
+    padding: 0 .5rem;
     display: inline-block;
-    line-height: 1.75em;
+    line-height: 1.75rem;
     width: 100%;
 }
 
@@ -77,13 +77,13 @@ h2 {
     vertical-align: text-bottom;
     width: 16px;
     height: 16px;
-    margin-right: .2em;
+    margin-right: .2rem;
 }
 
 .browser .content {
-    padding: 1em;
+    padding: 1rem;
     height: 68vh; /* webkit */
-    height: calc(80vh - 3em - 6px);
+    height: calc(80vh - 3rem - 6px);
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -98,10 +98,10 @@ h2 {
 }
 
 .browser .content .color {
-    width: 32%;
-    height: 14vh; /* webkit */
-    height: calc(23% + 0vh);
-    color: rgba(255,255,255,.5);
+    width: calc((100% / 3) - 2px);
+    height: 13vh; /* webkit */
+    height: calc((((100% - 2rem) / 4) - 2px) + 0vh);
+    color: rgba(255, 255, 255, .5);
     display: -webkit-flex;
     display: flex;
     justify-content: center;
@@ -109,20 +109,22 @@ h2 {
     align-items: center;
     -webkit-align-items: center;
     font-size: 15vh;
-    padding-bottom: .13em; /* compensate for &times; */
-}
-
-.browser .content .color:nth-of-type(3n) {
-    margin-right: 0;
+    padding-bottom: .5rem; /* compensate for &times; */
 }
 
 .browser .hint {
     font-family: Arial, sans-serif;
-    color: rgba(255, 255, 255, .4);
+    color: rgba(255, 255, 255, .5);
     text-transform: uppercase;
-    font-size: 70%;
+    font-size: .7rem;
     width: 100%;
-    text-align: center;
+    height: 2rem;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
 }
 
 .tile.download {
