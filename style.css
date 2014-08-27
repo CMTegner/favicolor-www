@@ -128,5 +128,14 @@ h2 {
     -webkit-align-items: flex-end;
 }
 
+.browser .hint .tap,
+.touchevents .browser .hint .click {
+    display: none;
+}
+
+.touchevents .browser .hint .tap {
+    display: inline;
+}
+
 .tile.download {
 }

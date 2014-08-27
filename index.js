@@ -1,6 +1,11 @@
 var on = require('component-delegate').bind;
 var favicolor = require('favicolor');
 
+// Borrowed from https://github.com/Modernizr/Modernizr/blob/f526d97579d7ab42031bb2b852e8551d7b9f87e2/feature-detects/touchevents.js#L40
+if (('ontouchstart' in window) || (window.DocumentTouch && document instanceof DocumentTouch)) {
+    document.body.classList.add('touchevents')
+}
+
 var selectedColor;
 
 function selectColor(element) {
