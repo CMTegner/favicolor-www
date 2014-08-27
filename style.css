@@ -101,6 +101,15 @@ h2 {
     width: 32%;
     height: 14vh; /* webkit */
     height: calc(23% + 0vh);
+    color: rgba(255,255,255,.5);
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    font-size: 15vh;
+    padding-bottom: .13em; /* compensate for &times; */
 }
 
 .browser .content .color:nth-of-type(3n) {
