@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.tile {
+    height: 100vh;
+    padding: 10vh;
+}
+
+h1 {
+    margin: 0;
+    font: normal 400%/100% 'Pinyon Script', cursive;
+    vertical-align: bottom;
+    display: inline;
+}
+
+h2 {
+    margin: 0;
+    font: normal 180%/220% 'Lato', sans-serif;
+}
+
+.tile.title {
+    line-height: 40vh;
+    text-align: center;
+}
+
+.tile.preview {}
+
+.browser {
+    border: 2px solid #d3d3d3;
+    border-radius: 2px;
+    margin: 0 auto;
+    max-width: 600px;
+    height: 80vh;
+}
+
+.location-bar {
+    border-bottom: 2px solid #d3d3d3;
+}
+
+.location-bar .buttons {
+    float: left;
+    text-align: center;
+    line-height: 3em;
+    width: 4.5em;
+}
+
+.location-bar .circle {
+    height: .75em;
+    border-radius: .75em;
+    border: 2px solid #d3d3d3;
+    display: inline-block;
+    width: .75em;
+}
+
+.location-bar .location {
+    margin: 0 1em 0 4.5em;
+    line-height: 3em;
+}
+
+.location-bar .address {
+    border-radius: 2px;
+    border: 2px solid;
+    color: #d3d3d3;
+    font-family: Arial, sans-serif;
+    padding: 0 .5em;
+    display: inline-block;
+    line-height: 1.75em;
+    width: 100%;
+}
+
+.location-bar .address .favicon {
+    vertical-align: text-bottom;
+    width: 16px;
+    height: 16px;
+    margin-right: .2em;
+}
+
+.browser .content {
+    padding: 1em;
+    height: 68vh; /* webkit */
+    height: calc(80vh - 3em - 6px);
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-content: space-between;
+    -webkit-align-content: space-between;
+}
+
+.browser .content .color {
+    width: 32%;
+    height: 14vh; /* webkit */
+    height: calc(23% + 0vh);
+}
+
+.browser .content .color:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.browser .hint {
+    font-family: Arial, sans-serif;
+    color: rgba(255, 255, 255, .4);
+    text-transform: uppercase;
+    font-size: 70%;
+    width: 100%;
+    text-align: center;
+}
+
+.tile.download {
+}

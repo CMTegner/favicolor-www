@@ -1,0 +1,32 @@
+{
+  "name": "favicolor-www",
+  "version": "1.0.0",
+  "description": "favicolor website",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "cat node_modules/colors.css/css/colors.css style.css > bundle.css",
+    "build-js": "browserify index.js -o bundle.js",
+    "build": "npm run build-css && npm run build-js",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CMTegner/favicolor-www"
+  },
+  "keywords": [
+    "favicolor",
+    "favicon",
+    "color"
+  ],
+  "author": "Christian Tegnér",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CMTegner/favicolor-www/issues"
+  },
+  "homepage": "https://github.com/CMTegner/favicolor-www",
+  "devDependencies": {
+    "browserify": "^5.10.1",
+    "colors.css": "^1.0.0"
+  }
+}
