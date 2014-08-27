@@ -137,5 +137,8 @@ h2 {
     display: inline;
 }
 
-.tile.download {
+.tile.download h2,
+.tile.download pre {
+    max-width: 600px;
+    margin: 0 auto;
 }
