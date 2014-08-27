@@ -27,6 +27,8 @@
   "homepage": "https://github.com/CMTegner/favicolor-www",
   "devDependencies": {
     "browserify": "^5.10.1",
-    "colors.css": "^1.0.0"
+    "colors.css": "^1.0.0",
+    "component-delegate": "^0.2.3",
+    "favicolor": "^1.0.0"
   }
 }
