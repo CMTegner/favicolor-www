@@ -1,6 +1,6 @@
 var on = require('component-delegate').bind;
 var favicolor = require('favicolor');
-var prism = require('prismjs');
+var highlight = require('highlight.js');
 
 // Borrowed from https://github.com/Modernizr/Modernizr/blob/f526d97579d7ab42031bb2b852e8551d7b9f87e2/feature-detects/touchevents.js#L40
 if (('ontouchstart' in window) || (window.DocumentTouch && document instanceof DocumentTouch)) {
@@ -31,7 +31,7 @@ on(colorContainer, '[data-role=color]', 'click', function(event) {
 });
 
 for (var i = 0; i < code.length; i++) {
-    prism.highlightElement(code[i]);
+    highlight.highlightBlock(code[i])
 }
 
 selectColor(colorContainer.children[4]);

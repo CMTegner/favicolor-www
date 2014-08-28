@@ -4,7 +4,7 @@
   "description": "favicolor website",
   "main": "index.js",
   "scripts": {
-    "build-css": "cat node_modules/colors.css/css/colors.css node_modules/prismjs/themes/prism-okaidia.css style.css > bundle.css",
+    "build-css": "cat node_modules/colors.css/css/colors.css node_modules/highlight.js/styles/tomorrow-night-eighties.css style.css > bundle.css",
     "build-js": "browserify index.js -o bundle.js",
     "build": "npm run build-css && npm run build-js",
     "prepublish": "npm run build",
@@ -30,6 +30,6 @@
     "colors.css": "^1.0.0",
     "component-delegate": "^0.2.3",
     "favicolor": "^1.0.0",
-    "prismjs": "git://github.com/LeaVerou/prism.git#b907ea5"
+    "highlight.js": "^8.2.0"
   }
 }
