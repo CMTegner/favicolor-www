@@ -25,10 +25,10 @@
   },
   "homepage": "http://favicolor.ima.computer",
   "devDependencies": {
-    "browserify": "^5.10.1",
-    "colors.css": "^1.0.0",
+    "browserify": "^9.0.8",
+    "colors.css": "^2.3.0",
     "component-delegate": "^0.2.3",
     "favicolor": "^1.0.0",
-    "highlight.js": "^8.2.0"
+    "highlight.js": "^8.5.0"
   }
 }
