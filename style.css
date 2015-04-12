@@ -4,6 +4,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    color: #222;
     margin: 0;
 }
 
@@ -158,6 +159,17 @@ h2 {
     text-align: center;
     font-size: 70%;
     display: block;
+}
+
+.tile.download .source {
+    text-align: center;
+}
+
+.tile.download .source a,
+.tile.download .source a:hover,
+.tile.download .source a:visited,
+.tile.download .source a:active {
+    color: #222;
 }
 
 .about {
