@@ -7,8 +7,7 @@
     "build-css": "cat node_modules/colors.css/css/colors.css node_modules/highlight.js/styles/monokai_sublime.css style.css > bundle.css",
     "build-js": "browserify index.js -o bundle.js",
     "build": "npm run build-css && npm run build-js",
-    "prepublish": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -24,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/CMTegner/favicolor-www/issues"
   },
-  "homepage": "https://github.com/CMTegner/favicolor-www",
+  "homepage": "http://favicolor.ima.computer",
   "devDependencies": {
     "browserify": "^5.10.1",
     "colors.css": "^1.0.0",
