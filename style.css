@@ -58,6 +58,21 @@ h2 {
     width: .75rem;
 }
 
+.location-bar .close:hover {
+    background: #fb4746;
+    border-color: #fb4746;
+}
+
+.location-bar .minimize:hover {
+    background: #fdb124;
+    border-color: #fdb124;
+}
+
+.location-bar .full-screen:hover {
+    background: #29c332;
+    border-color: #29c332;
+}
+
 .location-bar .location {
     margin: 0 1em 0 4.5rem;
     line-height: 3rem;
