@@ -138,6 +138,7 @@ h2 {
 }
 
 .tile.download h2,
+.tile.download small,
 .tile.download pre {
     max-width: 600px;
     margin: 0 auto;
@@ -148,11 +149,9 @@ h2 {
     text-align: center;
 }
 
-.tile.download > small {
+.tile.download small {
     text-transform: uppercase;
     text-align: center;
     font-size: 70%;
-    margin: 0 auto;
-    max-width: 600px;
     display: block;
 }
