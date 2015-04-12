@@ -117,6 +117,10 @@ h2 {
     cursor: pointer;
 }
 
+.browser .content .color.active::before {
+    content: '\00D7';
+}
+
 .browser .hint {
     color: rgba(255, 255, 255, .5);
     text-transform: uppercase;

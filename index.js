@@ -7,21 +7,19 @@ if (('ontouchstart' in window) || (window.DocumentTouch && document instanceof D
     document.body.classList.add('touchevents')
 }
 
-var selectedColor;
-
 function selectColor(element) {
     var style = window.getComputedStyle(element);
     var color = style.backgroundColor;
     favicolor(icon, color);
     fauxIcon.src = icon.href;
-    element.innerHTML = '&times;';
-    if (selectedColor) {
-        selectedColor.innerHTML = '';
+    for (var i = 0; i < colors.length; i++) {
+        colors[i].classList.remove('active');
     }
-    selectedColor = element;
+    element.classList.add('active');
 }
 
 var colorContainer = document.querySelector('[data-role=color-container]');
+var colors = colorContainer.querySelectorAll('[data-role=color]');
 var icon = document.querySelector('[rel=icon]');
 var fauxIcon = document.querySelector('[data-role=faux-icon]');
 var code = document.querySelectorAll('code');
