@@ -156,3 +156,17 @@ h2 {
     max-width: 600px;
     margin: 0 auto;
 }
+
+.tile.download pre.install {
+    margin: 4px auto 12px;
+    text-align: center;
+}
+
+.tile.download > small {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 70%;
+    margin: 0 auto;
+    max-width: 600px;
+    display: block;
+}
