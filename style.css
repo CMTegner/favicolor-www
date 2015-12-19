@@ -9,8 +9,18 @@ body {
 }
 
 .tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tile-content {
     min-height: 100vh;
-    padding: 10vh;
+    padding: 10vh 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
 }
 
 h1 {
@@ -25,19 +35,17 @@ h2 {
     font: normal 180%/220% 'Lato', sans-serif;
 }
 
-.tile.title {
-    line-height: 40vh;
+.title {
     text-align: center;
 }
 
-.tile.preview {}
+.preview {
+    width: 600px;
+}
 
 .browser {
     border: 2px solid #d3d3d3;
     border-radius: 2px;
-    margin: 0 auto;
-    max-width: 600px;
-    height: 80vh;
 }
 
 .location-bar {
@@ -142,33 +150,38 @@ h2 {
     display: inline;
 }
 
-.tile.download h2,
-.tile.download small,
-.tile.download pre {
-    max-width: 600px;
-    margin: 0 auto;
+.download {
+    width: 600px;
+    overflow: hidden;
 }
 
-.tile.download pre.install {
-    margin: 4px auto 12px;
+.download h2,
+.download small,
+.download pre {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.download pre.install {
+    margin: 4px 0 12px;
     text-align: center;
 }
 
-.tile.download small {
+.download small {
     text-transform: uppercase;
     text-align: center;
     font-size: 70%;
     display: block;
 }
 
-.tile.download .source {
+.download .source {
     text-align: center;
 }
 
-.tile.download .source a,
-.tile.download .source a:hover,
-.tile.download .source a:visited,
-.tile.download .source a:active {
+.download .source a,
+.download .source a:hover,
+.download .source a:visited,
+.download .source a:active {
     color: #222;
 }
 
