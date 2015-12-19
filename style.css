@@ -50,10 +50,10 @@ h2 {
 
 .location-bar {
     border-bottom: 2px solid #d3d3d3;
+    display: flex;
 }
 
 .location-bar .buttons {
-    float: left;
     text-align: center;
     line-height: 3rem;
     width: 4.5rem;
@@ -83,8 +83,9 @@ h2 {
 }
 
 .location-bar .location {
-    margin: 0 1em 0 4.5rem;
+    margin-right: 1em;
     line-height: 3rem;
+    flex-grow: 1;
 }
 
 .location-bar .address {
